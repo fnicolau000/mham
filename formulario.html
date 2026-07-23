@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulário</title>
+<meta charset="UTF-8">
+
+<!-- ============================ -->
+<script language="JavaScript">
+<!-- Begin
+function checkFields() {
+missinginfo = "";
+if (document.form.nome.value == "") {
+missinginfo += "\n *  Nome:";
+}
+if (document.form.replyto.value == "") {
+missinginfo += "\n *  E-mail:";
+}
+if (document.form.Comentarios.value == "") {
+missinginfo += "\n *  Comentários:";
+}
+/*
+if (document.form.responsavelpeloenvio.value == "") {
+missinginfo += "\n *  Nome completo:";
+}
+if (document.form.enderecoresidencial.value == "") {
+missinginfo += "\n *  Endere?o residencial:";
+}
+if ((document.form.email.value == "") ||
+(document.form.email.value.indexOf('@') == -1) ||
+(document.form.email.value.indexOf('.') == -1)) {
+missinginfo += "\n *  E-mail:";
+}
+if (document.form.cep.value == "") {
+missinginfo += "\n *  CEP:";
+}
+if (document.form.cidade.value == "") {
+missinginfo += "\n *  Cidade:";
+}
+if (document.form.estado.value == "") {
+missinginfo += "\n *  Estado:";
+}
+if (document.form.foneresidencial.value == "") {
+missinginfo += "\n *  Fone residencial:";
+}
+if (document.form.fonecomercial.value == "") {
+missinginfo += "\n *  Fone comercial:";
+}
+if (document.form.fonecelular.value == "") {
+missinginfo += "\n *  Fone celular:";
+}
+if (document.form.data.value == "") {
+missinginfo += "\n *  Data:";
+}
+if (document.form.nomepersonagem.value == "") {
+missinginfo += "\n *  NOME COMPLETO";
+}
+if (document.form.profissao.value == "") {
+missinginfo += "\n *  PROFISS?O:";
+}
+if (document.form.pai.value == "") {
+missinginfo += "\n *  NOME DO PAI:";
+}
+if (document.form.mae.value == "") {
+missinginfo += "\n *  NOME DA M?E:";
+}
+if (document.form.nascimento.value == "") {
+missinginfo += "\n *  DATA DE NASCIMENTO:";
+}
+if (document.form.local.value == "") {
+missinginfo += "\n *  LOCAL DE NASCIMENTO:";
+}
+*/
+if (missinginfo != "") {
+missinginfo ="\n" +
+"Os seguintes campos s?o necess?rios:\n" +
+missinginfo + "\n" +
+"\n          Obrigado!";
+alert(missinginfo);
+return false;
+}
+else return true;
+}
+//  End -->
+//-->
+</script> 
+
+<style type="text/css">
+<!--
+body {
+	background-color: #CCC;
+}
+-->
+</style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<html>
+
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+ <input type="hidden" name="recipient" value="felipenicolau@felipenicolau.com.br"> <!-- Pode ser qualquer endereço de email -->
+ <input type="hidden" name="redirect" value="http://www.felipenicolau.com.br/MHAM"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+ <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+ <input type="hidden" name="email" value="fenicolau@hotmail.com">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+<table width="600" border="0" align="center">
+  <tr>
+    <td align="center"><font color="#0033FF" face="Arial, Helvetica, sans-serif"><strong><u>FORMULÁRIO INCLUSÃO DE PERSONAGENS</u></strong></font><BR><BR>
+
+      <font color="#CC0000" face="Arial, Helvetica, sans-serif">Identificação do responsável pelo preenchimento:
+      </font></td>
+  </tr>
+</table>
+ <table width="600" border="0" align="center">
+   <tr>
+     <td width="210" align="right">Nome completo:</td>
+     <td width="380"><input type="text" size="50" name="nomeresp" /></td>
+   </tr>
+   <tr>
+     <td align="right">Endereço residencial:</td>
+     <td><input type="text" size="50" name="endresid" > </td>
+   </tr>
+   <tr>
+     <td align="right">E-mail:</td>
+     <td><input type="text" size="50" name="replyto2" /></td>
+   </tr>
+   <tr>
+     <td align="right">CEP:</td>
+     <td><input type="text" size="30" name="cep" />
+</td>
+   </tr>
+   <tr>
+    <td align="right">Cidade:</td>
+     <td><input type="text" size="50" name="cidade" /></td>
+   </tr>
+   <tr>
+     <td align="right">Estado:</td>
+     <td><font color="#333366" size="2" face="Arial, Helvetica, sans-serif">
+                      <select name="estado" size="1" id="estado">
+                        <option selected>Selecione...</option>
+                        <option value="AC">ACRE</option>
+                        <option value="AP">AMAP&Aacute;</option>
+                        <option value="AM">AMAZONAS</option>
+                        <option value="BH">BAHIA</option>
+                        <option value="CE">CEAR&Aacute;</option>
+                        <option value="DF">DISTRITO FEDERAL</option>
+                        <option value="ES">ESP&Iacute;RITO SANTO</option>
+                        <option value="GO">GOI&Aacute;S</option>
+                        <option value="MA">MARANH&Atilde;O</option>
+                        <option value="MT">MATO GROSSO</option>
+                        <option value="MS">MATO GROSSO DO SUL</option>
+                        <option value="MG">MINAS GERAIS</option>
+                        <option value="PA">PAR&Aacute;</option>
+                        <option value="PB">PARA&Iacute;BA</option>
+                        <option value="PR">PARAN&Aacute;</option>
+                        <option value="PE">PERNAMBUCO</option>
+                        <option value="PI">PIAU&Iacute;</option>
+                        <option value="RJ">RIO DE JANEIRO</option>
+                        <option value="RN">RIO GRANDE DO NORTE</option>
+                        <option value="RS">RIO GRANDE DO SUL</option>
+                        <option value="RO">ROND&Ocirc;NIA</option>
+                        <option value="RR">RORA&Iacute;MA</option>
+                        <option value="SC">SANTA CATARINA</option>
+                        <option value="SP">S&Atilde;O PAULO</option>
+                        <option value="SE">SERGIPE</option>
+                        <option value="TO">TOCANTINS</option>
+                      </select>
+                    </font></td>
+   </tr>
+   <tr>
+    <td align="right">Fone residencial:</td>
+     <td><input type="text" size="35" name="foneresid" /></td>
+   </tr>
+   <tr>
+    <td align="right">Fone comercial:</td>
+     <td><input type="text" size="35" name="fonecom" /></td>
+   </tr>
+   <tr>
+    <td align="right">Fone celular:</td>
+     <td><input type="text" size="35" name="fonecel" /></td>
+   </tr>
+   <tr>
+    <td align="right">Data:</td>
+     <td><input type="text" size="35" name="data" /></td>
+   </tr>
+   <tr>
+     <td align="right">Comentários:</td>
+     <td><input type="text" size="35" name="Comentarios2" /></td>
+   </tr>
+ </table>
+
+ <table width="600" border="0" align="center">
+   <tr>
+     <td align="center"><font color="#CC0000" face="Arial, Helvetica, sans-serif"><strong><u>IMPORTANTE:<br>
+              </u></strong></font>
+       Ao recebermos estes dados sugeridos via internet, eles serão devidamente avaliados e,<br />
+       após considerações, providenciaremos a inclusão desta nova personagem no site.<br />
+       <font color="#0033FF" face="Arial, Helvetica, sans-serif"><strong><u>DADOS PESSOAIS DA NOVA PERSONAGEM A SER INCLUÍDA:<br>
+              </u></strong></font>
+       </td>
+   </tr>
+ </table>
+ <table width="600" border="0" align="center">
+   <tr>
+      <td align="right" width="241">Nome completo:</td>
+     <td width="349"><input type="text" size="50" name="nomepers" /></td>
+   </tr>
+   <tr>
+      <td align="right">Profissão:</td>
+   <td><input type="text" size="50" name="profissao" /></td>
+   </tr>
+   <tr>
+     <td align="right">Nome do pai:</td>
+   <td><input type="text" size="50" name="pai" /></td>
+   </tr>
+   <tr>
+     <td align="right">Nome da mãe:</td>
+   <td><input type="text" size="50" name="mae" /></td>
+   </tr>
+   <tr>
+   <td align="right">Data de nascimento:</td>
+   <td><input type="text" size="50" name="datanasc" /></td>
+   </tr>
+   <tr>
+     <td align="right">Local de nascimento:</td>
+     <td><input type="text" size="50" name="localnasc" /></td>
+   </tr>
+   <tr>
+     <td align="right">Data de falecimento:</td>
+     <td><input type="text" size="50" name="datafalec" /></td>
+   </tr>
+
+
+ </table>
+ <table width="600" border="0" align="center">
+   <tr>
+     <td align="center"><font color="#CC0000" face="Arial, Helvetica, sans-serif"><strong><u>ATENÇÃO!:<br>
+              </u></strong></font>
+      Caso a personagem não tenha nascido em Morretes,<br />
+      informe quando ela veio morar na cidade.<br />
+      <strong>Escreva um breve histório sobre a personagem a ser incluida:<br />
+      (Ajuste a alça abaixo a direita como melhor lhe convier.)
+      </strong></td>
+   </tr>
+ </table>
+ <p align="center"><textarea name="textarea" cols="70"></textarea>
+
+   <BR><input type="submit" name="BTEnvia" value="Enviar"> 
+ <input type="reset" name="BTApaga" value="Apagar"> 
+
+        <input type="button" value="Voltar" onClick="history.go(-1)"> 
+        <!--<input type="button" value="Avançar" onCLick="history.forward()"> 
+        <input type="button" value="Atualizar" onClick="history.go(0)"> --></p>
+ <table width="600" border="0" align="center">
+   <tr>
+     <td align="justify"><font color="#CC0000" face="Arial, Helvetica, sans-serif"><strong><u>OBS.:</u></strong></font> Após registrar os dados da personagem, envie pelo e-mail: <a href="maito:fenicolau@hotmail.com">fenicolau@hotmail.com</a>, uma fotografia dela, e se for sobre artes, até cinco imagens das obras; sendo poeta ou autor citar as obras, e se possível enviar alguma poesia ou parte da literatura escrita pela personagem.</td>
+   </tr>
+ </table>
+ <p align="center">&nbsp;</p> 
+    </form>
+ 
+</html> 
+
+</body>
+</html>

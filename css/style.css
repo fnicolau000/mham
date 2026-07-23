@@ -1,0 +1,122 @@
+	*{
+		margin:100;
+		padding:300;
+	}
+	
+	.menu {
+		position: fixed;
+		left: 0px; /*Posição da faixa verde da esq. p/dir.*/
+		top: 4%;
+		width: 8em;
+		margin-top: -2.5em;
+		color: #000;
+	}	
+	
+	.menu{
+		width: 100%; /*% ou vw Visual Window-Largura da tela*/
+		height: 90px; /*Altura da faixa*/
+		background-color: green;/*#222;*/
+		font-family: 'Arial';		
+	}
+	
+	.menu ul {
+		list-style: none;
+		/*position: relative;*/
+		/*left: 450px; Muda os textos a 'n'px da esquerda*/
+		}
+	.menu ul li{
+		width: 150px; /* Distância entre textos*/
+		float: left;
+	}
+	.menu a{
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+		text-align: center; /*Centralização do texto dentro do seu espaço individual*/
+		background-color: green;/*#222; */
+		color: #fff;
+		font-size: 15px; /*Tamanho da fonte do texto HOME... etc*/
+						
+	}
+	/* Deixa ocultos os sub-itens*/
+	.menu ul ul{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	/*Permite que o sub-item apareça com o click*/
+	.menu ul li:hover ul{
+		visibility: visible;
+	}
+	/*Permite que o sub-item apareça em lista para baixo*/
+	.menu a:hover{
+		background-color: #f4f4f4;
+		color: #555;
+	}
+	
+	.menu ul ul li{
+		float:none;
+		border-bottom: solid 1px #ccc;
+	}
+	
+	.menu ul ul li a{
+		background-color:  #069;/*Cor do sub-item: blue; = azul escuro #069; = azul claro #222; = preto*/
+	}
+	
+	.menu2 {
+		position: fixed;
+		left: 0px; /*Posição da faixa verde da esq. p/dir.*/
+		bottom: 0%;
+		width: 8em;
+		margin-top: -2.5em;
+		color: #000;
+	}	
+	
+	.menu2{
+		width: 100%; /*% ou vw Visual Window-Largura da tela*/
+		height: 60px; /*Altura da faixa*/
+		background-color: green;/*#222;*/
+		font-family: 'Arial';
+		font-size:18px;
+		color: #fff;
+	}
+	
+	.menu2 ul {
+		list-style: none;
+		/*position: relative;*/
+		/*left: 450px; Muda os textos a 'n'px da esquerda  */
+		}
+	.menu2 ul li{
+		width: 150px; /* Distância entre textos*/
+		float: left;
+	}
+	
+	/* Deixa ocultos os sub-itens*/
+	.menu2 ul ul{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	/*Permite que o sub-item apareça com o click*/
+	.menu2 ul li:hover ul{
+		visibility: visible;
+	}
+	/*Permite que o sub-item apareça em lista para baixo*/
+	.menu2 a:hover{
+		background-color: #f4f4f4;
+		color: #555;
+	}
+	
+	.menu2 ul ul li{
+		float:none; /*=================================*/
+		border-bottom: solid 1px #ccc;
+	}
+	
+	.menu2 ul ul li a{
+		background-color:  #069;/*Cor do sub-item: blue; = azul escuro #069; = azul claro #222; = preto*/
+	}
+
+	body {
+		font-family: "Arial", "Helvetica", "Sans-Serif";
+		font-size: 120%;
+	}
